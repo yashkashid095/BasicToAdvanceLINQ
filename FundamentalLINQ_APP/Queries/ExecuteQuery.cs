@@ -45,7 +45,7 @@ namespace FundamentalLINQ_APP.Queries
             return employees.Select(x => x.Name);
         }
 
-       public IEnumerable<IGrouping<string, Employee>> GetEmpInEachDept(IEnumerable<Employee> employees)
+        public IEnumerable<IGrouping<string, Employee>> GetEmpInEachDept(IEnumerable<Employee> employees)
         {
             var getEmpInEachDept = employees.GroupBy(dept => dept.Department);
             return getEmpInEachDept;
